@@ -32,6 +32,8 @@ socket.on('escritorios-en-linea', escritoriosConectados => {
 
         divAlert.style.display = ''
 
+        strong.innerText = `Escritorios en línea:`;
+
         escritoriosConectados.forEach( (escritorio, index) => {
 
             const escritorioLowerCase = escritorio.replace( 'E', caracter => caracter.toLowerCase() );
