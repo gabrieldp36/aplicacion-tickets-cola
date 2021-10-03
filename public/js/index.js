@@ -30,7 +30,9 @@ socket.on('escritorios-en-linea', escritoriosConectados => {
 
     if (escritoriosConectados.length > 0) {
 
-        divAlert.style.display = ''
+        divAlert.style.display = '';
+
+        divAlert.classList.add('alert', 'alert-info');
 
         strong.innerText = `Escritorios en línea:`;
 
@@ -55,6 +57,8 @@ socket.on('escritorios-conectados', escritoriosConectados => {
     if (escritoriosConectados.length > 0) {
 
         divAlert.style.display = ''
+
+        divAlert.classList.add('alert', 'alert-info');
 
         const escritoriosMostrarPantalla = escritoriosConectados.map( (escritorio, index) => {
 
@@ -83,6 +87,8 @@ socket.on('escritorio-desconectado', escritoriosEnLinea => {
     if (escritoriosEnLinea.length > 0) {
 
         divAlert.style.display = ''
+
+        divAlert.classList.add('alert', 'alert-info');
 
         const escritoriosMostrarPantalla = escritoriosEnLinea.map( (escritorio, index) => {
 
