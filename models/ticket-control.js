@@ -99,6 +99,22 @@ class TicketControl {
 
         return ticket;
     };
+
+    conectarEscritorio (escritorio) {
+
+        this.escritoriosConectados.push(escritorio);
+        
+        this.guardarDB();
+    };
+
+    desconectarEscritorio (escritorio) {
+
+        const indexNumber = this.escritoriosConectados.indexOf(escritorio);
+
+        this.escritoriosConectados.splice(indexNumber, 1);
+    
+        this.guardarDB();
+    };
 };
 
 module.exports = TicketControl;

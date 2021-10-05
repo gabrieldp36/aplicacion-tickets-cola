@@ -24,19 +24,13 @@ const socketController =  (socket) => {
             });
         };
 
-        ticketControl.escritoriosConectados.push(escritorio);
-        
-        ticketControl.guardarDB();
+        ticketControl.conectarEscritorio(escritorio);
 
         socket.broadcast.emit('escritorios-conectados', ticketControl.escritoriosConectados);
         
         socket.on('disconnect', () => {
 
-            const indexNumber = ticketControl.escritoriosConectados.indexOf(escritorio);
-
-            ticketControl.escritoriosConectados.splice(indexNumber, 1);
-        
-            ticketControl.guardarDB();
+            ticketControl.desconectarEscritorio(escritorio);
 
             socket.broadcast.emit('escritorio-desconectado', ticketControl.escritoriosConectados);
         });            
