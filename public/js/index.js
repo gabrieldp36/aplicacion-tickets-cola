@@ -1,5 +1,3 @@
-// Referencias Html.
-
 const input = document.querySelector('input');
 
 const divAlert = document.querySelector('.alert');
@@ -7,7 +5,9 @@ const divAlert = document.querySelector('.alert');
 const strong = document.querySelector('strong');
 
 input.addEventListener('keyup', (event) => {
-  
+
+    input.name = '';
+
     const nombreCortado = event.target.value.split(' ');
 
     const escritorio = nombreCortado[0];

@@ -10,8 +10,6 @@ const divAlert = document.querySelector('.alert');
 
 const lblPendientes = document.querySelector('#lblPendientes');
 
-// Socket config.
-
 const socket = io();
 
 let escritorio = '';
