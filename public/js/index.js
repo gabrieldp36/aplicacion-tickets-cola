@@ -1,11 +1,12 @@
 // refresh ante navegación.
 
 window.addEventListener( "pageshow", ( event ) => {
-    const historyTraversal = event.persisted || 
-                           ( typeof window.performance != "undefined" && 
-                                window.performance.navigation.type === 2 );
+    
+    const historyTraversal = event.persisted;
+                      
     if ( historyTraversal ) {
-      window.location.reload();
+      
+        window.location.reload();
     };
 });
 
