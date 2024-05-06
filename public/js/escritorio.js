@@ -32,9 +32,9 @@ divAlert.style.display = 'none';
 
 if ( !searchParams.has('escritorio') ) {
 
-    alert('Ingrese por favor la palabra escritorio seguida de un espacio, indicando el número de escritorio.');
-
     window.location = 'index.html';
+
+    alert('Debe seleccionar un escritorio');
 
 } else if ( searchParams.has('escritorio') ) {
 

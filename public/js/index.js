@@ -12,29 +12,26 @@ window.addEventListener( "pageshow", ( event ) => {
 
 // Referencias Html
 
-const input = document.querySelector('input');
+const select = document.querySelector('#escritorio');
 
 const divAlert = document.querySelector('.alert');
 
 const strong = document.querySelector('strong');
 
-input.addEventListener('keyup', (event) => {
-
-    input.name = '';
-
-    const nombreCortado = event.target.value.split(' ');
-
-    const escritorio = nombreCortado[0];
-
-    const escritorioLowerCase = escritorio.replace( 'E', caracter => caracter.toLowerCase() );
-    
-    if ( ( escritorioLowerCase === 'escritorio') && !isNaN( parseFloat(nombreCortado[1]) ) ) {
-
-        input.name = escritorioLowerCase; 
-    };
-});
-
 divAlert.style.display = 'none'
+
+// Populado de escritorios.
+
+const incorporarEscritorios = (numeroEscritorios) => {
+    for (let i = 0; i < numeroEscritorios; i++) {
+        const option = document.createElement('option');
+        option.text = `escritorio ${i+1}`;
+        option.value = `escritorio ${i+1}`;
+        select.add(option);
+    };
+};
+
+incorporarEscritorios(10);
 
 // Socket config.
 
