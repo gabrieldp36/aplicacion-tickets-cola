@@ -1,3 +1,5 @@
+![portada](https://github.com/gabrieldp36/aplicacion-tickets-cola/assets/88417383/8bb84af9-f854-46db-a7b8-636a6d6b25e2)
+
 # Aplicación para gestionar cola de tickets.
 
 Esta aplicación permite gestionar, en tiempo real, gracias a la tecnología de web sockets, la atención de clientes mediante el otorgamiento de tickets y asignación de escritorios. Informa internanmente, en tiempo real, los escritorios que se encuentran online trabajando, el número de ticket que esta siendo atendido y la cantidad total de ticket que restan ser atendidos.
