@@ -12,7 +12,7 @@ Pueden abrir varias ventanas del navegador y probar a fondo la aplicación!!
 No olviden visistar la App haciendo click en este link: 
 
 ```
-https://aplicacion-tickets-cola-production.up.railway.app/
+https://aplicacion-tickets-cola.onrender.com
 ```
 
 ### Notas:
