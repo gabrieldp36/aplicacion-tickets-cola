@@ -1,4 +1,4 @@
-// // refresh ante navegación.
+// refresh ante navegación.
 
 window.addEventListener( "pageshow", ( event ) => {
 
